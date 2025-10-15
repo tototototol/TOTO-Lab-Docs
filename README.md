@@ -1,13 +1,13 @@
 # TOTO Lab Docs
-[![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 Resident written content for TOTO Lab.
 
-This work is licensed under [CC BY-NC 4.0][cc-by-nc], and code examples are [CC0][cc0] by default unless noted otherwise in code comments.
+This work is licensed under [CC BY-SA 4.0][cc-by-sa], and code examples are [CC0][cc0] by default unless noted otherwise in code comments.
 
-[![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
-[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
 [cc0]: https://creativecommons.org/publicdomain/zero/1.0/
-[cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
-[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-brightgreen.svg
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-brightgreen.svg
