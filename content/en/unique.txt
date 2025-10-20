@@ -1,0 +1,60 @@
+title: LSL reference
+data:
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: h1
+          child:
+            - node: text
+              text: Hello world!
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: How are you today?
+  - type: Long Script
+    title: This is some code
+    content:
+      type: Script
+      text: integer c = 3;
+  - type: Page Fold
+    title: Content drop down
+    content:
+      type: Article
+      content:
+        node: root
+        child:
+          - node: element
+            tag: p
+            child:
+              - node: text
+                text: It's foo!
+          - node: element
+            tag: div
+            attr:
+              class:
+                - flex-center
+                - image-wrapper
+                - highlighted-image
+            child:
+              - node: element
+                tag: img
+                attr:
+                  src: >-
+                    https://picsum.photos/1200/630
+                  class:
+                    - pad-1
+                    - tiny-photo
+          - node: text
+            text: ​
+          - node: element
+            tag: br
+  - type: Long Script
+    title: Here is some long code
+    content:
+      type: Script
+      text: |-
+        integer p = 10;
+        string bar = "foo";
