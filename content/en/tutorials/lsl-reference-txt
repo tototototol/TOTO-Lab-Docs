@@ -1,0 +1,25 @@
+title: LSL reference
+data:
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: div
+          attr:
+            class:
+              - flex-center
+              - image-wrapper
+              - highlighted-image
+          child:
+            - node: element
+              tag: img
+              attr:
+                src: c1a29598-c21a-4fe3-a622-18cd19d50a1a.png
+        - node: text
+          text: ​
+desc: >-
+  r page stand out when shared! Add a short, engaging description that tells
+  readers what your page is about. This summary will appear whenever your page
+  is linked or shared online.
+imgsrc: ''
