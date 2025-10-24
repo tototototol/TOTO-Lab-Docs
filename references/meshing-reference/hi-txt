@@ -1,0 +1,104 @@
+title: Hi
+data:
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: div
+          attr:
+            class:
+              - flex-center
+              - image-wrapper
+          child:
+            - node: element
+              tag: br
+        - node: text
+          text: ​
+        - node: element
+          tag: br
+        - node: element
+          tag: p
+        - node: element
+          tag: p
+          attr:
+            class:
+              - flex-center
+              - image-wrapper
+              - highlighted-image
+          child:
+            - node: element
+              tag: img
+              attr:
+                src: undefined
+        - node: text
+          text: ​
+        - node: element
+          tag: div
+          attr:
+            class:
+              - flex-center
+              - image-wrapper
+          child:
+            - node: element
+              tag: img
+              attr:
+                class:
+                  - pad-1
+                  - tiny-photo
+                src: undefined
+        - node: text
+          text: ​
+        - node: element
+          tag: h2
+          child:
+            - node: text
+              text: Hello World!
+        - node: element
+          tag: div
+          attr:
+            class:
+              - flex-center
+              - image-wrapper
+          child:
+            - node: element
+              tag: img
+              attr:
+                class:
+                  - pad-1
+                  - tiny-photo
+                src: undefined
+            - node: element
+              tag: p
+              child:
+                - node: element
+                  tag: br
+        - node: text
+          text: ​
+        - node: element
+          tag: p
+        - node: element
+          tag: div
+          attr:
+            class:
+              - flex-center
+              - image-wrapper
+          child:
+            - node: element
+              tag: img
+              attr:
+                class: small-photo
+                src: undefined
+        - node: text
+          text: ​
+        - node: element
+          tag: p
+        - node: element
+          tag: p
+  - type: Long Script
+    title: Hello World!
+    content:
+      type: Script
+      text: hello world
+desc: Learn the step by step way of creating a reference for making an animation.
+imgsrc: ''
