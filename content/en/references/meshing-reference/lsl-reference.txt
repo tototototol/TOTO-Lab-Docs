@@ -12,9 +12,22 @@ data:
               - image-wrapper
           child:
             - node: element
+              tag: br
+        - node: text
+          text: ​
+        - node: element
+          tag: p
+        - node: element
+          tag: div
+          attr:
+            class:
+              - flex-center
+              - image-wrapper
+          child:
+            - node: element
               tag: img
               attr:
-                src: /media/03627121-5892-48b1-a6d6-dcc5a6d87643.webp
+                src: /media/ee58a808-4f35-47b7-8070-ae1a0700a9bd.webp
         - node: text
           text: ​
         - node: element
@@ -27,13 +40,13 @@ data:
             - node: element
               tag: img
               attr:
-                src: /media/fd4bb4db-04ac-4707-b7ef-1912200fcad5.webp
+                src: /media/3fe8805f-51b8-4975-b617-77ab6f21de86.webp
         - node: text
           text: ​
         - node: element
-          tag: br
+          tag: p
 desc: >-
   r page stand out when shared! Add a short, engaging description that tells
   readers what your page is about. This summary will appear whenever your page
   is linked or shared online.
-imgsrc: /media/da4dbc3e-91cc-4863-8ada-70de7812facb.webp
+imgsrc: /media/cedb842b-88a3-431e-a80d-3547b01d462a.webp
