@@ -12,19 +12,6 @@ data:
               - image-wrapper
           child:
             - node: element
-              tag: br
-        - node: text
-          text: ​
-        - node: element
-          tag: p
-        - node: element
-          tag: div
-          attr:
-            class:
-              - flex-center
-              - image-wrapper
-          child:
-            - node: element
               tag: img
               attr:
                 src: /media/ee58a808-4f35-47b7-8070-ae1a0700a9bd.webp
