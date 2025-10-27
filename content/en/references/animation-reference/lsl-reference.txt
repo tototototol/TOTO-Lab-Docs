@@ -1,0 +1,87 @@
+title: LSL reference
+data:
+  - type: Long Script
+    title: This is some code
+    content:
+      type: Script
+      text: integer c = 3;
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: h2
+          child:
+            - node: text
+              text: Hello world!
+        - node: element
+          tag: p
+          child:
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: Yeah
+        - node: element
+          tag: p
+        - node: element
+          tag: div
+          attr:
+            class:
+              - flex-center
+              - image-wrapper
+              - highlighted-image
+          child:
+            - node: element
+              tag: img
+              attr:
+                src: /media/5ca13513-1f08-484a-bab2-e242c484a34b.webp
+            - node: element
+              tag: p
+              child:
+                - node: element
+                  tag: br
+        - node: text
+          text: ​
+        - node: element
+          tag: br
+        - node: element
+          tag: p
+          child:
+            - node: element
+              tag: br
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: How are you today?
+        - node: element
+          tag: p
+          child:
+            - node: element
+              tag: br
+  - type: Long Script
+    title: Here is some long code
+    content:
+      type: Script
+      text: |-
+        integer p = 10;
+        string bar = "foo";
+  - type: Script
+    text: Yolo
+  - type: Script
+    text: ''
+  - type: Long Script
+    title: ''
+    content:
+      type: Script
+      text: ''
+  - type: Article
+    content:
+      node: root
+      child: []
+desc: >-
+  lp make your page stand out when shared! Add a short, engaging description
+  that tells readers what your page is about. This summary will appear whenever
+  your page is linked or shared online.
+imgsrc: /media/c0ef746e-671a-4a53-a8b4-a60e7b7e4ad1.webp
