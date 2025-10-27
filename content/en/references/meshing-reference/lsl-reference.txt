@@ -14,7 +14,7 @@ data:
             - node: element
               tag: img
               attr:
-                src: /media/6f3bf0fc-de16-49a7-a294-0fd5e2fe0a07.png
+                src: /media/03627121-5892-48b1-a6d6-dcc5a6d87643.webp
         - node: text
           text: ​
         - node: element
@@ -27,7 +27,7 @@ data:
             - node: element
               tag: img
               attr:
-                src: /media/27447ae8-e0c1-462a-b8f9-704152a0c073.png
+                src: /media/fd4bb4db-04ac-4707-b7ef-1912200fcad5.webp
         - node: text
           text: ​
         - node: element
@@ -36,4 +36,4 @@ desc: >-
   r page stand out when shared! Add a short, engaging description that tells
   readers what your page is about. This summary will appear whenever your page
   is linked or shared online.
-imgsrc: /media/eb73ee4f-80fb-4996-a8a4-ba4f11e787ea.gif
+imgsrc: /media/da4dbc3e-91cc-4863-8ada-70de7812facb.webp
