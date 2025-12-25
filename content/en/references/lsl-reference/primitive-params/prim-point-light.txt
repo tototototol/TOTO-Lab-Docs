@@ -1,0 +1,352 @@
+title: PRIM_POINT_LIGHT
+data:
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: p
+          child:
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: PRIM_POINT_LIGHT
+            - node: text
+              text: ' (often referred to as prim light) is a primitive parameter used to turn a prim into a dynamic light source. It allows an object to cast light onto its surrounding environment, affecting nearby surfaces and avatars.'
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: >-
+                A prim light can also be set by the viewer edit menu. In
+                Firestorm, the prim light setting for an object is under 
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: Right Click &gt; Edit &gt; Features &gt; Light
+            - node: text
+              text: .
+        - node: element
+          tag: div
+          child:
+            - node: element
+              tag: div
+              attr:
+                class:
+                  - flex-center
+                  - image-wrapper
+              child:
+                - node: element
+                  tag: img
+                  attr:
+                    class:
+                      - pad-1
+                      - tiny-photo
+                    src: /media/fd977218-8b41-4b07-9eba-d45eb889ab36.webp
+            - node: element
+              tag: div
+              attr:
+                class:
+                  - flex-center
+                  - image-wrapper
+              child:
+                - node: element
+                  tag: br
+            - node: element
+              tag: div
+              attr:
+                class:
+                  - flex-center
+                  - image-wrapper
+                  - highlighted-image
+              child:
+                - node: element
+                  tag: img
+                  attr:
+                    class:
+                      - pad-1
+                      - tiny-photo
+                    src: /media/19d8d08a-8373-4b49-9945-5756afd2832d.webp
+            - node: element
+              tag: h2
+              child:
+                - node: text
+                  text: Syntax
+  - type: Script
+    text: >-
+      PRIM_POINT_LIGHT, integer boolean, vector linear_color, float intensity,
+      float radius, float falloff
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: h2
+          child:
+            - node: text
+              text: Parameters
+        - node: element
+          tag: ol
+          child:
+            - node: element
+              tag: li
+              child:
+                - node: element
+                  tag: code
+                  child:
+                    - node: text
+                      text: integer boolean
+                - node: text
+                  text: '&nbsp;Turns the light on or off.'
+            - node: element
+              tag: li
+              child:
+                - node: element
+                  tag: code
+                  child:
+                    - node: text
+                      text: vector linear_color
+                - node: text
+                  text: ' Sets the color of the light. Uses linear RGB values (0.0 to 1.0).'
+            - node: element
+              tag: li
+              child:
+                - node: element
+                  tag: code
+                  child:
+                    - node: text
+                      text: float intensity
+                - node: text
+                  text: '&nbsp;The brightness of the light, ranging from 0.0 to 1.0.'
+            - node: element
+              tag: li
+              child:
+                - node: element
+                  tag: code
+                  child:
+                    - node: text
+                      text: "float\tradius"
+                - node: text
+                  text: >-
+                    &nbsp;How far (in meters) the light travels, ranges from 0.1
+                    to 20.0.
+            - node: element
+              tag: li
+              child:
+                - node: element
+                  tag: code
+                  child:
+                    - node: text
+                      text: float falloff
+                - node: text
+                  text: >-
+                    &nbsp;How quickly the light's intensity decreases as it
+                    moves away from the source. Ranges from 0.01 to 2.0.
+        - node: element
+          tag: h2
+          child:
+            - node: text
+              text: Description
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: This parameter can be used in&nbsp;
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: llSetPrimitiveParams
+            - node: text
+              text: ' &amp; '
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: llSetLinkPrimitiveParams
+            - node: text
+              text: ' &amp; '
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: llSetLinkPrimitiveParamsFast
+            - node: text
+              text: .
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: >-
+                Without "Advanced Lighting Model" enabled, users only see up to
+                6 local lights at once.
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: 'For a realistic effect, builders often combine '
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: PRIM_POINT_LIGHT
+            - node: text
+              text: ' (to light the room) with a small amount of '
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: PRIM_GLOW
+            - node: text
+              text: ' and '
+            - node: element
+              tag: code
+              child:
+                - node: text
+                  text: PRIM_FULLBRIGHT
+            - node: text
+              text: ' (to make the bulb look "on").'
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: >-
+                Standard point lights in Second Life generally shine through
+                walls and do not cast shadows unless a user has specific
+                advanced graphics settings enabled.
+        - node: element
+          tag: h2
+          child:
+            - node: text
+              text: Examples
+        - node: element
+          tag: h3
+          child:
+            - node: text
+              text: Simple prim light switch
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: >-
+                This script toggles the state of a prim light between "on" and
+                "off" whenever the prim is touched.
+  - type: Script
+    text: |-
+      integer on;
+
+      default
+      {
+          touch_end(integer total_number)
+          {
+              on = !on;
+              llSetPrimitiveParams([
+                  PRIM_POINT_LIGHT, on, <1, 1, 1>, 1, 10, 0.6
+              ]); 
+          }
+      }
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: h3
+          child:
+            - node: text
+              text: Integer boolean is FALSE
+  - type: Script
+    text: |-
+      default
+      {
+          touch_end(integer total_number)
+          {
+              llSetPrimitiveParams([
+                  PRIM_POINT_LIGHT, FALSE, <1, 1, 1>, 1, 10, 0.6
+              ]);
+
+              // This light never turns on!
+          }
+      }
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: h3
+          child:
+            - node: text
+              text: Changing colors
+        - node: element
+          tag: p
+          child:
+            - node: text
+              text: >-
+                This script sets a new light color every time the prim is
+                touched. You can add more colors to the list.
+  - type: Script
+    text: |-
+      list colors = [
+          <1, 0, 0>, // red
+          <0, 1, 0>, // green
+          <0, 0, 1>  // blue
+      ];
+
+      // index of the current color
+      integer i;
+
+      default
+      {
+          touch_end(integer total_number)
+          {   
+              // get the color at the current index
+              vector color = llList2Vector(colors, i);
+              
+              llSetPrimitiveParams([
+                  PRIM_POINT_LIGHT, TRUE, color, 1, 10, 0.6
+              ]);
+             
+              // increment the index to cycle through colors
+              i = (i + 1) % llGetListLength(colors);
+          }
+      }
+  - type: Article
+    content:
+      node: root
+      child:
+        - node: element
+          tag: h2
+          child:
+            - node: text
+              text: Tutorials
+        - node: element
+          tag: h2
+          child:
+            - node: text
+              text: Help Wanted
+        - node: element
+          tag: ul
+          child:
+            - node: element
+              tag: li
+              child:
+                - node: text
+                  text: Add more examples
+            - node: element
+              tag: li
+              child:
+                - node: text
+                  text: >-
+                    Explain the difference between sRGB and RGB and how it
+                    applies to prim lights
+            - node: element
+              tag: li
+              child:
+                - node: text
+                  text: Tutorials on fun projects using lights
+desc: >-
+  Learn to use the PRIM_POINT_LIGHT parameter to configure point lights on
+  prims. Control properties like color, intensity, radius, and falloff for
+  dynamic lighting effects in your builds.
+imgsrc: /media/bc3f2675-1c28-4b49-96c2-8385f85bc8e3.webp
